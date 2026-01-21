@@ -94,9 +94,9 @@ function Register(){
 
        <div className="field">
         <label>Gender:</label><br/>
-      <input type="radio" name="gender" value="Male" onChange={handleChange} /> Male
-      <input type="radio" name="gender" value="Female" onChange={handleChange} /> Female
-      <input type="radio" name="gender" value="Others" onChange={handleChange} /> Others
+      <input type="radio" name="gender" value="Male" checked={formData.gender === "Male"} onChange={handleChange} /> Male
+      <input type="radio" name="gender" value="Female" checked={formData.gender === "Female"} onChange={handleChange} /> Female
+      <input type="radio" name="gender" value="Others" checked={formData.gender === "Others"} onChange={handleChange} /> Others
        </div>
 
       <div className="field">
@@ -144,5 +144,6 @@ function Register(){
     </form>
     </>
 )}
+
 
 export default Register
